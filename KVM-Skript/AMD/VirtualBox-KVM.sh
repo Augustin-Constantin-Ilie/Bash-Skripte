@@ -1,7 +1,7 @@
 # KVM-Skript.
 clear
 echo "Haben sie den Skript als ROOT ausgeführt?!"
-read -p "Eingabe: " input
+read -p "Eingabe: j/J || n/N " input
 COPY_START_LOCATION="Config/blacklist-kvm.conf"
 PASTE_END_LOCATION="/etc/modprobe.d/blacklist-kvm.conf"
 if [[ "$input" == "j" || "$input" == "J" ]]; then
